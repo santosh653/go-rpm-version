@@ -6,6 +6,18 @@ language: go
 go:
   - 1.7
   - 1.8
+jobs:
+ exclude:
+  - go: 1.7
+    arch: amd64
+  - go: 1.7
+    arch: ppc64le 
+  - go: 1.8
+    arch: amd64
+  - go: 1.8
+    arch: ppc64le
+
+    
 before_install:
   - go get github.com/mattn/goveralls
   - go get golang.org/x/tools/cmd/cover
