@@ -9,11 +9,7 @@ go:
 jobs:
  exclude:
   - go: 1.7
-    arch: amd64
-  - go: 1.7
-    arch: ppc64le 
-  - go: 1.8
-    arch: amd64
+    arch: ppc64le
   - go: 1.8
     arch: ppc64le
 
